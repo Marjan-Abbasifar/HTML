@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Tablecourse</title>
+    <style>
+table,tr,th,td
+{
+   border: 2px solid red ;
+  border-collapse: collapse;
+}
+table{
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Table caption</caption>
+        <colgroup>
+       <col span="1" style="background-color: aqua;">
+       <col span="3" style="background-color: darkorchid;"> 
+       <col span="1" style="background-color: darkorange;">
+       <col span="1" style="background-color: darkseagreen;">
+        </colgroup>
+
+       
+        <thead>
+            <tr>
+                <th colspan="6" style="background-color: bisque;">Main heading</th>
+            </tr>
+          
+            <tr>
+             
+                <th>SL</th>
+                <th>H1</th>
+                <th>H2</th>
+                <th>H3</th>
+                <th>H4</th>
+                <th>H5</th>
+           
+            </tr>
+        
+        </thead>
+    
+        <tbody>
+            <tr>
+                <td>01</td>
+                <td>Item01</td>
+                <td>Item02</td>
+                <td>Item03</td>
+                <td>Item04</td>
+                <td rowspan="3">Side</td>
+            </tr>
+            <tr><td>02</td>
+                <td>Item05</td>
+                <td>Item06</td>
+                <td>Item07</td>
+                <td>Item08</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>Item09</td>
+                <td>Item10</td>
+                <td>Item11</td>
+                <td>Item12</td>
+               
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+            <td colspan="6"  align="center" style="background-color: bisque;">
+                Footer
+            </td>
+        </tr>
+        </tfoot>
+        </colgroup>
+    </table>
+</body>
+</html>
