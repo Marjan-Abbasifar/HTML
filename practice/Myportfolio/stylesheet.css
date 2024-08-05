@@ -1,0 +1,9 @@
+/*this is a css code to change the profile photo into circular shape*/
+img.circular-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+
+}
