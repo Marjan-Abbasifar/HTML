@@ -10,6 +10,9 @@
 </head>
 
 <body>
+    <div id="success-message" class="hidden">
+        <p>Thanks for reaching out, I'll be in touch soon.</p>
+    </div>
 
 
 <header id="mainheader">
@@ -59,7 +62,38 @@
   </section>
 <section id="contact">
     <h2>contact</h2>
-    <form action="#" method="post">
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+        <!-- Replace with your Access Key -->
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+
+        <!-- Custom URL -->
+        <input type="hidden" name="redirect" value="https://github.com/Marjan-Abbasifar/Portfolio.github.io.git/? redirect=true">
+
+    
+        <!-- Form Inputs. Each input must have a name="" attribute -->
+         <p>
+            <label for="name">name</label>
+              <input type="text" id="name" name="name" required>
+         </p>
+         <p>
+            <label for="email">email</label>
+              <input type="email" id="email" name="email" required>
+         </p>
+         <p>
+            <label for="message">message</label>
+        <textarea id="message" name="message" required></textarea>
+         </p>
+         <p>
+            <input type="submit" id="submit">
+         </p>
+    
+       <!--hcapcha spam protection-->
+       <div class="h-capcha" datac-capcha="true"></div>
+      
+    </form>
+  
+   <!--<form action="#" method="post">
         <p>
             <label for="name">name
             <input type="text" name="name" required id="name">
@@ -79,7 +113,7 @@
         
         <input type="submit">
        </p>
-</form>
+</form>--> 
 </section>
 
 </main>
@@ -93,7 +127,24 @@
     </nav> 
     </ul>
 </footer>
-</body>
+  <!--required for capcha-->
+  <script src="https://www.wb3forms.com/client/script.js" async defer></script>
+  <script>
+    window.load = function() {
+        //check the url query string
+        const urlparams = new URLSearchParams(window.location.search);
+        // If the form has been submitted successfuly, show the success message
+        if (urlparams.get("redirect")==="true") {
+         const successMessage= document.getElementById("success-message");
+         successMessage.classList.remove("hidden");
+         setTimeout(function(){
+
+        successMessage.classList.add("hidden"); 
+    } ,4000);
+        }
+
+    }
+  </script>
 
 
 </html>
