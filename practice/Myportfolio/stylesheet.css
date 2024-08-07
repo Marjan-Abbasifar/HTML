@@ -40,12 +40,12 @@ nav{
     background-color: #222;
     border-top: 1px solid #333;
     text-align: right;
-    padding: 20px 20px;
+    padding-right: 80px;
     
 }
 nav li {
     display:inline-block;
-    padding:  0 20px;
+    padding:  20px;
 }
 nav li a{
     color: white;
@@ -79,19 +79,21 @@ img.circular-image{
    justify-content: center;   
 }
 
-.card-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;   
-    grid-gap: 20px;
-}
-
-.img{
-    width:100%
+.card-container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 20px;
+   
 }
 .card-title{
     font-weight: bold;
     font-size: 1.2em;
 }
+
+.card img{
+    width:100%
+}
+
 .card a{
     display: inline-block;
     text-decoration: none;
@@ -100,10 +102,35 @@ img.circular-image{
     border: 1px solid #222;
     padding: 10px 20px;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
 
 }
 .card a:hover{
     background-color: #222;
     color: white;
 }
+
+/*CONTACT SECTION*/
+    input:not([type='submit']), textarea {
+    width: 400px;
+    padding:12px 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+ input[type='submit'] {
+    background-color: #6c6c6c;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+
+ }
+ input[type='submit']:hover{
+    cursor: pointer;
+    background-color: #5b5b5b;
+ }
+ /*FOOTER SECTION*/
+ #footer nav{
+    text-align: left;
+    padding-left: 80px;
+ }
