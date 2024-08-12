@@ -1,5 +1,5 @@
 nav{
-    background-color: #e6e6e6;
+    background-color: #5e5b5b;
     height: 40px;
 }
 nav ul{
@@ -24,20 +24,21 @@ nav ul li a{
     display: block;
     text-decoration: none;
     padding: 7px 15px 3px 15px;
-    background-color: #e6e6e6;
+    background-color: #5e5b5b;
     color: #ffffff;
     margin-left: 40px;
     white-space: nowrap;
     height: 30px; /*width and height of top-level nav items*/
-    width: 90px;
+    width: 100px;
     text-align: center;
-    font-size: small;
+    font-size: medium;
 }
 nav a:link, a:visited{
     text-decoration: none;
 }
 nav ul li a:hover{
-    background-color: #c1c1d6;
+    background-color: #e0e0e0;
+    color:#000000;
 
 }
 nav li:hover ul{
@@ -51,11 +52,11 @@ nav li:hover li{
 
 }
 nav li:hover a{
-    background-color: #c1c1d6;
+    background-color: #797979;
     height: 30px; /*height of the lower level nav items is shorter than main level*/
 }
 nav li:hover li a:hover{
-    background-color: #95a9b1;
+    background-color: #e0e0e0;
 }
 nav ul li ul li a{
     text-align: left;
