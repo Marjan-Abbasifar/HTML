@@ -8,6 +8,8 @@
   .item--1{
     
     background-color:red;
+   
+  
   }
   .item--2{
     background-color:coral;
@@ -15,11 +17,13 @@
   }
   .item--3{
     background-color:yellow;
+   
   
     
   }
   .item--4{
     background-color:aqua;
+    
   }
   
   .item--5{
@@ -27,6 +31,8 @@
     }
   .item--6{
     background-color:green;
+  
+  
   }
   .container{
     display:grid;
@@ -34,4 +40,9 @@
     grid-template-columns: repeat(3,200px);
     grid-row-gap:20px;
     grid-column-gap:20px;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: rgb(30, 37, 63);
+    width: 1000px;
+    height: 400px;
   }
