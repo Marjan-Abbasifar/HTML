@@ -1,0 +1,13 @@
+.item{
+    font-size: 24px;
+    background-color: #D90429;
+    color: white;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,200px);
+    grid-template-rows: repeat(2,150px);
+   grid-gap: 24px;
+   grid-auto-rows: 50px;
+   grid-auto-columns: 300px;
+   grid-auto-flow: column;
