@@ -33,9 +33,48 @@ body{
 
 
 }
-#logo{
+/*#logo{
     transform: translate(30px, 30px);
 }
 #home{
     transform: translate(25px,200px);
+}*/
+.sidebar-items{
+    display: grid;
+    justify-items: center;
+    width:100px;
+    height:100%;
+    padding-top: 22px;
+
 }
+
+ .sidebar-icon{
+    width: 40px;
+    height: 40px;
+    
+ }
+ .sidebar-icons-container{
+    position: absolute;  
+    top: 50%;
+    transform: translateY(-50%);
+    display: grid;
+    justify-items: center;
+   
+
+}
+ .home-container{
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 18px;
+    background-color: white;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05); 
+    position: relative;
+    
+ }
+ .home-icon{
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+ }
