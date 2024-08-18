@@ -165,4 +165,94 @@ body{
     grid-column: 4/5;
     border-radius: 11px;
     padding: 16px 0px;
+    display: grid;
+    grid-template-columns: 85%;
+    grid-template-rows: 200px 280px 300px;
+    justify-content: center;
+    position: relative;
  }
+ .circle-container{
+   display: flex;
+   justify-content: center;   
+   align-items: center;
+ }
+ .circle{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 150px;
+   width: 150px;
+   border-radius: 50%;
+   background:white;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+ }
+ .circle span{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 90px;
+   width: 90px;
+   border-radius: 50%;
+   background-color: white;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   column-gap: 2px;
+   color:#07c8f9;
+ }
+ .circle span sub{
+   font-size: 22px;
+   font-weight: bold;
+   color: blue;
+ }
+ .circle span h1{
+   font-size: 27px;
+   font-weight: bolder;
+ }
+ .circle-container--2{
+   width: 155px;
+   height: 155px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: red;
+   /*making a semi circle*/
+   background: conic-gradient(#07c8f9 68%, white 0%);
+   border-radius: 50%;
+   position: relative;
+ }
+ .circle-container--2::after{
+   content: "";
+   display: inline-block;
+   width:10px;
+   height: 10px;
+   border-radius: 50%;
+   background-color: #07c8f9;
+   position: absolute;
+   top: 69%;
+   left:3%;
+ }
+ .edit-icon{
+ position: absolute;
+ top:3%;
+ right: 10%;
+ width: 30px;
+ height: 30px;
+ color: rgb(80, 79, 79);
+}
+.earnings{
+   position: absolute;
+   top:15%;
+   right: -5%;
+   width: 85px;
+   height: 45px;
+   color: white;
+   font-size: 20px;
+   background-color: #07c8f9;
+   border-radius: 11px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+
+
+}
