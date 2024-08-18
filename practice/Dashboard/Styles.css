@@ -282,3 +282,63 @@ body{
    width: 300px;
   
 }
+.transaction-container{
+  
+  
+}
+.transaction-header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ 
+}
+.plus-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #fb3640;
+   height: 40px;
+   width: 40px;
+   border-radius: 11px;
+}
+.transaction-header h2{
+   font-size: 22px;
+}
+ul li{
+   list-style: none;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 24PX;
+}
+.bike-container img{
+   
+   width: 30PX;
+   height: 30PX;
+
+   
+}
+ul li div{
+   display: flex;
+   align-items: center;
+   column-gap: 24px;
+}
+.bike-container, .shopping-container , .amazon-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: white;
+   width: 50px;
+   height: 50px;
+   border-radius: 11px;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   
+
+}
+
+
+}
+.transaction-time{
+   margin-top: 6px;
+   color: #aaa;
+}
