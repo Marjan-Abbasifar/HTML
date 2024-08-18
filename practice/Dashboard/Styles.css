@@ -170,6 +170,7 @@ body{
     grid-template-rows: 200px 280px 300px;
     justify-content: center;
     position: relative;
+    row-gap: 24px;
  }
  .circle-container{
    display: flex;
@@ -255,4 +256,29 @@ body{
 
 
 
+}
+/*building the visa card and transactions showcase.*/
+.my-card-container{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 22px;
+   width: 98%;
+}
+.my-card-title{
+  
+   font-size: 24px;
+
+}
+.menu{
+   height: 30px;
+   width: 30px;
+
+   
+}
+.visa-card{
+   
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   width: 300px;
+  
 }
