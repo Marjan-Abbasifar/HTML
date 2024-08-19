@@ -89,21 +89,8 @@ body{
 
 
  
- .spend-time-container{
-    background-color: green;
- }
- .post-container{
-    background-color: tomato;
- }
- .spend-post-container{
-    background-color:blue;
-    grid-column: 1/4;
-    grid-row: 4/5;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
- }
-
+ 
+ 
  .main-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr) 350px;
@@ -445,6 +432,62 @@ ul li div{
    position: relative;
    
  }
+ /*styling the spent-time section*/
+
+ .spend-post-container{
+   /*background-color:blue;*/
+   grid-column: 1/4;
+   grid-row: 4/5;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr;
+   column-gap: 20px;
+}
+
+ .spend-time-container{
+   /*background-color: green;*/
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   border-radius: 11px;
+   display: flex;
+   position: relative;
+   align-items: end;
+
+
+}
   
   
 
+.spend-time-container img{
+   width: 350px;
+   margin-left: 50px;
+ 
+  
+  
+}
+.spend-post-container h1{
+   font-size: 22px;
+   position: absolute;
+   top: 12%;
+   left:8%
+   
+   
+   
+   
+}
+/*styling the post container section*/
+.post-container{
+   /*background-color: tomato;*/
+
+}
+.post-container{
+ 
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   border-radius: 11px;
+   display: flex;
+   position: relative;
+   align-items: end;
+
+
+}
+
+  
