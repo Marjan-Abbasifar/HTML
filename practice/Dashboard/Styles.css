@@ -441,7 +441,7 @@ ul li div{
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: 1fr;
-   column-gap: 20px;
+   /*column-gap: 20px;*/
 }
 
  .spend-time-container{
@@ -474,20 +474,67 @@ ul li div{
    
    
 }
-/*styling the post container section*/
-.post-container{
-   /*background-color: tomato;*/
+/*styling the user post profile*/
 
-}
+
+
 .post-container{
- 
-   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
    border-radius: 11px;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   padding: 24px 24px 0 24px;
+   
+}
+.post-image-container{
    display: flex;
-   position: relative;
-   align-items: end;
-
+   align-items: center;
+   column-gap: 16px;
+}
+.post-image-container img{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+}
+.post-image-container h2{
+   font-size: 18px;
+}
+.post-image-container sub{
+   font-size: 12px;
+   color: #aaa;
+}
+#your-mastery{
+   font-size: 20px;
+   line-height: 150%;
+   margin: 24px 0;
+}
+.post-icons{
+   display: flex;
+   column-gap: 32px;
+}
+.post-icons-container{
+   display: flex;
+   align-items: center;
+   column-gap: 8px;
 
 }
-
-  
+.connect-button-container{
+   display: flex;
+   margin-top: 32px;
+   justify-content: space-between;
+   align-items: center;
+}
+.connect-button{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   width: 150px;
+   height: 50px;
+   background-color: #560099;
+   color: white;
+   border-radius: 22px;
+   border: none;
+   font-family: lato;
+   font: 18px;
+}
+.connect-button p{
+   margin-top: -3.5px;
+}
