@@ -441,7 +441,7 @@ ul li div{
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: 1fr;
-   /*column-gap: 20px;*/
+   column-gap: 20px;
 }
 
  .spend-time-container{
