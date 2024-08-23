@@ -21,12 +21,8 @@ body{
     background-color: wheat;
 }
 
-.logo-item{
-    background-color: #f1f1f1;
-}
-.input-item{
-    background-color: #333;
-}
+
+
 .profile-item{
     background-color: crimson;
 }
@@ -49,4 +45,60 @@ body{
 }
 .gallery-footer{
     background-color: lightskyblue;
+}
+
+/*Styling the logo section*/
+
+.logo-item{
+    /*background-color: #f1f1f1;*/
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding-left: 16px;
+
+}
+
+/*styling the input section*/
+
+.input-item{
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.input{
+    border: none;
+    outline: none;
+    width: 100%;
+    padding:12px 12px 12px 24px;
+    font-size: 16px;
+    border-radius: 22px;
+    background-color: white;
+    box-shadow: rgba(0,0,0,0.1) 0px 10px 50px;
+
+}
+
+.input::placeholder{
+    color: #b1b1b1;
+}
+
+.input-container{
+    width: 90%;
+    position: relative;
+}
+.search-button{
+    background: linear-gradient(#7ed56f, #2ab485);
+    width: 150px;
+    height: 44px;
+    padding:12px;
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    right: -15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+    border-radius: 22px;
+    color: white;
+    cursor: pointer;
 }
